@@ -323,19 +323,21 @@ export default function Index() {
           href="https://wa.me/79490732315" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="w-14 h-14 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+          className="relative w-14 h-14 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
           title="Написать в WhatsApp"
         >
           <Icon name="MessageCircle" size={28} />
+          <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-75"></span>
         </a>
         <a 
           href="https://t.me/GKgranit19" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="w-14 h-14 bg-[#0088cc] hover:bg-[#006699] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+          className="relative w-14 h-14 bg-[#0088cc] hover:bg-[#006699] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 animate-pulse"
           title="Написать в Telegram"
         >
           <Icon name="Send" size={28} />
+          <span className="absolute inset-0 rounded-full bg-[#0088cc] animate-ping opacity-75"></span>
         </a>
       </div>
 
