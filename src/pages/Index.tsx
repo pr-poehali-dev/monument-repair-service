@@ -147,6 +147,42 @@ export default function Index() {
               </div>
             ))}
           </div>
+
+          <div className="mt-16 max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold text-center mb-8 text-secondary">Ремонт памятников</h3>
+            <p className="text-center text-muted-foreground mb-8">Профессиональная реставрация с полным восстановлением</p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-0">
+                  <div className="relative">
+                    <img src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/c20520f0-b56e-4056-8a2a-7d16803cad04.jpg" alt="До ремонта" className="w-full h-80 object-cover" />
+                    <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold">
+                      ДО
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold mb-2">До ремонта</h4>
+                    <p className="text-muted-foreground">Повреждения, трещины, выцветшая гравировка</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-xl transition-shadow">
+                <CardContent className="p-0">
+                  <div className="relative">
+                    <img src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/f5e9b7e3-bdb9-4129-adf0-92443a749453.jpg" alt="После ремонта" className="w-full h-80 object-cover" />
+                    <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold">
+                      ПОСЛЕ
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold mb-2">После ремонта</h4>
+                    <p className="text-muted-foreground">Полное восстановление, как новый памятник</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
