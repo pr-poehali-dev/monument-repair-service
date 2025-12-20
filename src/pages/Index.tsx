@@ -158,17 +158,17 @@ export default function Index() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { name: "Египетский серый", desc: "Элегантный серый оттенок, высокая прочность", icon: "Mountain" },
-              { name: "Индия черный", desc: "Глубокий черный цвет, высокая плотность", icon: "Circle" },
-              { name: "Карелия черный", desc: "Российское качество, морозостойкость", icon: "MapPin" },
-              { name: "Дымовский коричневый", desc: "Благородный коричневый оттенок, надежность", icon: "Hexagon" },
-              { name: "Индия красный", desc: "Насыщенный красный цвет, долговечность", icon: "Diamond" }
+              { name: "Египетский серый", desc: "Элегантный серый оттенок, высокая прочность", img: "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/28d4db7b-8e74-475a-b1b4-61457e02c76e.jpg" },
+              { name: "Индия черный", desc: "Глубокий черный цвет, высокая плотность", img: "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/8a94788a-3699-4ae0-b7c6-f26e5ce4e42e.jpg" },
+              { name: "Карелия черный", desc: "Российское качество, морозостойкость", img: "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/6e63e252-0c0d-489f-874a-0ee4d9b3d099.jpg" },
+              { name: "Дымовский коричневый", desc: "Благородный коричневый оттенок, надежность", img: "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/170cfe67-8090-4c6e-8073-1d2a7c701153.jpg" },
+              { name: "Индия красный", desc: "Насыщенный красный цвет, долговечность", img: "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/84a25198-9b1f-4482-ac80-714abe063cdd.jpg" }
             ].map((material, idx) => (
-              <Card key={idx} className="hover:shadow-xl transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="w-14 h-14 mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Icon name={material.icon as any} size={28} className="text-primary" />
-                  </div>
+              <Card key={idx} className="hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img src={material.img} alt={material.name} className="w-full h-full object-cover hover:scale-110 transition-transform" />
+                </div>
+                <CardContent className="pt-4">
                   <h3 className="text-xl font-bold mb-2">{material.name}</h3>
                   <p className="text-muted-foreground text-sm">{material.desc}</p>
                 </CardContent>
