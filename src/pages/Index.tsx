@@ -1,8 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useState, useEffect } from "react";
 
 export default function Index() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["portfolio", "shapes", "materials", "contacts"];
+      const scrollPosition = window.scrollY + 100;
+
+      if (scrollPosition < 500) {
+        setActiveSection("home");
+        return;
+      }
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(section);
+            return;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <header className="bg-secondary text-white py-4 sticky top-0 z-50 shadow-lg">
@@ -24,11 +54,36 @@ export default function Index() {
             </div>
           </div>
           <nav className="flex gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
-            <a href="/" className="hover:text-primary transition-colors font-medium">Главная страница</a>
-            <a href="#portfolio" className="hover:text-primary transition-colors font-medium">Наши работы</a>
-            <a href="#shapes" className="hover:text-primary transition-colors font-medium">Формы памятников</a>
-            <a href="#materials" className="hover:text-primary transition-colors font-medium">Материалы</a>
-            <a href="#contacts" className="hover:text-primary transition-colors font-medium">Контакты</a>
+            <a 
+              href="/" 
+              className={`hover:text-primary transition-colors font-medium ${activeSection === "home" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            >
+              Главная страница
+            </a>
+            <a 
+              href="#portfolio" 
+              className={`hover:text-primary transition-colors font-medium ${activeSection === "portfolio" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            >
+              Наши работы
+            </a>
+            <a 
+              href="#shapes" 
+              className={`hover:text-primary transition-colors font-medium ${activeSection === "shapes" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            >
+              Формы памятников
+            </a>
+            <a 
+              href="#materials" 
+              className={`hover:text-primary transition-colors font-medium ${activeSection === "materials" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            >
+              Материалы
+            </a>
+            <a 
+              href="#contacts" 
+              className={`hover:text-primary transition-colors font-medium ${activeSection === "contacts" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            >
+              Контакты
+            </a>
           </nav>
         </div>
       </header>
