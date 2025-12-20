@@ -25,6 +25,7 @@ export default function Index() {
           </div>
           <nav className="flex gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
             <a href="#portfolio" className="hover:text-primary transition-colors font-medium">Наши работы</a>
+            <a href="#shapes" className="hover:text-primary transition-colors font-medium">Формы памятников</a>
             <a href="#materials" className="hover:text-primary transition-colors font-medium">Материалы</a>
             <a href="#contacts" className="hover:text-primary transition-colors font-medium">Контакты</a>
           </nav>
@@ -65,7 +66,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">О компании</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
-            ГК ГРАНИТ — ваш надежный партнер в создании памятников
+            ГК ГРАНИТ — создаём памятники любой сложности и формы. Индивидуальный подход к каждому заказу.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow">
@@ -202,7 +203,45 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="materials" className="py-20 bg-muted">
+      <section id="shapes" className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Формы памятников</h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
+            Более 50 форм памятников. Изготовим памятник любой сложности по вашему эскизу
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {[
+              { img: 'https://cdn.poehali.dev/files/1.jpg', title: 'Форма Г1 - Волна с розами', desc: 'Элегантная волнообразная форма с гравировкой роз' },
+              { img: 'https://cdn.poehali.dev/files/1.jpg', title: 'Форма Г2 - Скошенная волна', desc: 'Современный дизайн с асимметричным верхом' },
+              { img: 'https://cdn.poehali.dev/files/1.jpg', title: 'Форма Г3 - Резной барельеф', desc: 'Объёмная резьба с флористическим орнаментом' },
+              { img: 'https://cdn.poehali.dev/files/1.jpg', title: 'Форма Г4 - Классический фигурный', desc: 'Традиционная форма с плавными изгибами' }
+            ].map((shape, idx) => (
+              <Card key={idx} className="hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="h-64 overflow-hidden bg-gradient-to-br from-amber-50 to-orange-100">
+                  <img src={shape.img} alt={shape.title} className="w-full h-full object-contain p-4 hover:scale-105 transition-transform" />
+                </div>
+                <CardContent className="pt-4">
+                  <h3 className="text-lg font-bold mb-2">{shape.title}</h3>
+                  <p className="text-muted-foreground text-sm">{shape.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-lg text-muted-foreground mb-4">
+              Это лишь несколько примеров. У нас более 50 различных форм памятников!
+            </p>
+            <a href="tel:+79490732315">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                <Icon name="Phone" size={20} className="mr-2" />
+                Узнать о всех формах
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="materials" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Материалы</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
