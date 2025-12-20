@@ -66,7 +66,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'isBase64Encoded': False
         }
     
-    telegram_message = f"🔔 Новая заявка с сайта ГК ГРАНИТ\n\n👤 Имя: {name}\n📱 Телефон: {phone}\n💬 Сообщение: {message if message else 'Не указано'}"
+    telegram_message = f"🔔 Новая заявка с сайта ГК ГРАНИТ\n\n👤 Имя: {name}\n📱 Телефон: {phone}\n💬 Сообщение: {message if message else 'Не указано'}\n"
     
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     data = urllib.parse.urlencode({
