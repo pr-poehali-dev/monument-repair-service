@@ -318,6 +318,27 @@ export default function Index() {
         </div>
       </section>
 
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+        <a 
+          href="https://wa.me/79490732315" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+          title="Написать в WhatsApp"
+        >
+          <Icon name="MessageCircle" size={28} />
+        </a>
+        <a 
+          href="https://t.me/GKgranit19" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-[#0088cc] hover:bg-[#006699] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+          title="Написать в Telegram"
+        >
+          <Icon name="Send" size={28} />
+        </a>
+      </div>
+
       <footer className="bg-secondary text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-2">ГК ГРАНИТ</h3>
