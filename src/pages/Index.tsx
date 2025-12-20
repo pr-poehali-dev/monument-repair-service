@@ -135,9 +135,9 @@ export default function Index() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/76d11fe8-0de2-4a28-9e0f-09539e861b11.jpg', title: 'Гранитный памятник' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/f75eb2ce-2be5-49e2-84af-1102597d2c38.jpg', title: 'Мраморный памятник' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/3d319f14-85f2-45eb-b62d-be346f444b97.jpg', title: 'Процесс изготовления' }
+              { img: 'https://cdn.poehali.dev/files/IMG_7475.jpeg', title: 'Двойной памятник из гранита' },
+              { img: 'https://cdn.poehali.dev/files/1cb2cfa4-b4a6-4e64-a283-8887a8d71046.jpeg', title: 'Памятник с благоустройством' },
+              { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' }
             ].map((item, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                 <img src={item.img} alt={item.title} className="w-full h-80 object-cover transition-transform group-hover:scale-110" />
