@@ -6,21 +6,28 @@ export default function Index() {
   return (
     <div className="min-h-screen">
       <header className="bg-secondary text-white py-4 sticky top-0 z-50 shadow-lg">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
-            <p className="text-sm text-muted-foreground">Памятники из гранита и мрамора</p>
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center mb-3">
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
+              <p className="text-sm text-gray-400">Памятники из гранита и мрамора</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-4 py-2 rounded-lg transition-colors">
+                <Icon name="Send" size={24} />
+                <span className="hidden md:inline font-medium">Telegram</span>
+              </a>
+              <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Icon name="Phone" size={20} />
+                <span className="hidden md:inline">+7 (949) 073-23-15</span>
+              </a>
+            </div>
           </div>
-          <div className="flex items-center gap-4">
-            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-4 py-2 rounded-lg transition-colors">
-              <Icon name="Send" size={24} />
-              <span className="hidden md:inline font-medium">Telegram</span>
-            </a>
-            <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Icon name="Phone" size={20} />
-              <span className="hidden md:inline">+7 (949) 073-23-15</span>
-            </a>
-          </div>
+          <nav className="flex gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
+            <a href="#portfolio" className="hover:text-primary transition-colors font-medium">Наши работы</a>
+            <a href="#materials" className="hover:text-primary transition-colors font-medium">Материалы</a>
+            <a href="#contacts" className="hover:text-primary transition-colors font-medium">Контакты</a>
+          </nav>
         </div>
       </header>
 
@@ -127,9 +134,9 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Портфолио</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Наши работы</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
             Примеры наших работ
           </p>
@@ -195,7 +202,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
+      <section id="materials" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Материалы</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
