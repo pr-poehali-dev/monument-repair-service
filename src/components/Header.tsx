@@ -24,34 +24,34 @@ export default function Header({ activeSection }: HeaderProps) {
             </a>
           </div>
         </div>
-        <nav className="flex gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
+        <nav className="flex flex-wrap gap-4 md:gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
           <a 
             href="/" 
-            className={`hover:text-primary transition-colors font-medium ${activeSection === "home" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "home" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Главная страница
           </a>
           <a 
             href="#portfolio" 
-            className={`hover:text-primary transition-colors font-medium ${activeSection === "portfolio" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "portfolio" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Наши работы
           </a>
           <a 
             href="#shapes" 
-            className={`hover:text-primary transition-colors font-medium ${activeSection === "shapes" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "shapes" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Формы памятников
           </a>
           <a 
             href="#materials" 
-            className={`hover:text-primary transition-colors font-medium ${activeSection === "materials" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "materials" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Материалы
           </a>
           <a 
             href="#contacts" 
-            className={`hover:text-primary transition-colors font-medium ${activeSection === "contacts" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "contacts" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Контакты
           </a>
