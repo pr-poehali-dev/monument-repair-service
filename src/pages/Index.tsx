@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutAndServices from "@/components/AboutAndServices";
+import OrderForm from "@/components/OrderForm";
 import PortfolioAndContacts from "@/components/PortfolioAndContacts";
+import FloatingButtons from "@/components/FloatingButtons";
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState("home");
@@ -39,7 +41,9 @@ export default function Index() {
       <Header activeSection={activeSection} />
       <HeroSection />
       <AboutAndServices />
+      <OrderForm />
       <PortfolioAndContacts />
+      <FloatingButtons />
     </div>
   );
 }

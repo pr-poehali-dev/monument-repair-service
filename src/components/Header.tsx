@@ -13,7 +13,7 @@ export default function Header({ activeSection }: HeaderProps) {
             <img 
               src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg" 
               alt="ГК ГРАНИТ" 
-              className="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover"
+              className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover"
             />
             <div>
               <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
