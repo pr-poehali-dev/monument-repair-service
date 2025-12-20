@@ -12,9 +12,9 @@ export default function Index() {
             <p className="text-sm text-muted-foreground">Памятники из гранита и мрамора</p>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Icon name="Send" size={20} />
-              <span className="hidden md:inline">Telegram</span>
+            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-4 py-2 rounded-lg transition-colors">
+              <Icon name="Send" size={24} />
+              <span className="hidden md:inline font-medium">Telegram</span>
             </a>
             <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Icon name="Phone" size={20} />
