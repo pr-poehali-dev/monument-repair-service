@@ -317,6 +317,34 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
+
+          <div className="mt-16 max-w-6xl mx-auto">
+            <h3 className="text-3xl font-bold text-center mb-8 text-secondary">Наше расположение</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="rounded-lg overflow-hidden shadow-lg h-[400px]">
+                <iframe 
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A8e3a7f9d8e0c4b5a9e3d7f8c6b5a4d3c&amp;source=constructor" 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0"
+                  title="Яндекс.Карты - Мариуполь, Киевский рынок"
+                ></iframe>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg h-[400px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.5!2d37.5!3d47.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA2JzAwLjAiTiAzN8KwMzAnMDAuMCJF!5e0!3m2!1sru!2s!4v1234567890123!5m2!1sru!2s" 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0" 
+                  style={{ border: 0 }} 
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps - Мариуполь, Киевский рынок"
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
