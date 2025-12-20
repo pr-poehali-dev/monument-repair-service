@@ -17,17 +17,21 @@ export default function Header({ activeSection }: HeaderProps) {
             />
             <div>
               <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
-              <p className="text-sm text-gray-400">Памятники из гранита и мрамора</p>
+              <p className="text-sm text-gray-400">Работаем по всей Донецкой и Ростовской области</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-4 py-2 rounded-lg transition-colors">
-              <Icon name="Send" size={24} />
-              <span className="hidden md:inline font-medium">Telegram</span>
+          <div className="flex items-center gap-3 flex-wrap">
+            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-3 py-2 rounded-lg transition-colors">
+              <Icon name="Send" size={20} />
+              <span className="hidden md:inline font-medium text-sm">Telegram</span>
             </a>
-            <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Icon name="Phone" size={20} />
-              <span className="hidden md:inline">+7 (949) 073-23-15</span>
+            <a href="tel:+79490732315" className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Icon name="Phone" size={18} />
+              <span className="text-sm">+7 (949) 073-23-15</span>
+            </a>
+            <a href="tel:+79173347022" className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Icon name="Phone" size={18} />
+              <span className="text-sm">+7 (917) 334-70-22</span>
             </a>
           </div>
         </div>

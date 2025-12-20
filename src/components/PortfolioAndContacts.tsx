@@ -123,10 +123,15 @@ export default function PortfolioAndContacts() {
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="Phone" size={32} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Телефон</h3>
-                <a href="tel:+79490732315" className="text-primary hover:underline text-lg">
-                  +7 (949) 073-23-15
-                </a>
+                <h3 className="text-xl font-bold mb-2">Телефоны</h3>
+                <div className="flex flex-col gap-2">
+                  <a href="tel:+79490732315" className="text-primary hover:underline text-lg">
+                    +7 (949) 073-23-15
+                  </a>
+                  <a href="tel:+79173347022" className="text-primary hover:underline text-lg">
+                    +7 (917) 334-70-22
+                  </a>
+                </div>
               </CardContent>
             </Card>
 
