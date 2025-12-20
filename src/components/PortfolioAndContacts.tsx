@@ -18,7 +18,11 @@ export default function PortfolioAndContacts() {
               { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' },
               { img: 'https://cdn.poehali.dev/files/IMG_4150.jpeg', title: 'Одиночный памятник с портретом' },
               { img: 'https://cdn.poehali.dev/files/IMG_5256.jpeg', title: 'Памятник с гравировкой' },
-              { img: 'https://cdn.poehali.dev/files/IMG_5252.jpeg', title: 'Памятник из светлого гранита' }
+              { img: 'https://cdn.poehali.dev/files/IMG_5252.jpeg', title: 'Памятник из светлого гранита' },
+              { img: 'https://cdn.poehali.dev/files/IMG_8835.jpeg', title: 'Памятник с арочным дизайном' },
+              { img: 'https://cdn.poehali.dev/files/IMG_0401.jpeg', title: 'Двойной памятник с благоустройством' },
+              { img: 'https://cdn.poehali.dev/files/IMG_0763.jpeg', title: 'Памятник для супругов' },
+              { img: 'https://cdn.poehali.dev/files/4aa9c7d0-be34-4ebd-ab49-1760a7f3a4a4.jpeg', title: 'Памятник с гравировкой пейзажа' }
             ].map((work, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
                 <img src={work.img} alt={work.title} className="w-full h-64 object-cover" />
