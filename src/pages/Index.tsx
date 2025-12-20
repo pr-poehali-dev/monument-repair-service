@@ -269,6 +269,18 @@ export default function Index() {
                   </a>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="MessageCircle" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">WhatsApp</h3>
+                  <a href="https://wa.me/79490732315" target="_blank" rel="noopener noreferrer" className="text-lg text-[#25D366] hover:underline">
+                    +7 (949) 073-23-15
+                  </a>
+                </div>
+              </div>
             </div>
 
             <Card className="shadow-xl">
