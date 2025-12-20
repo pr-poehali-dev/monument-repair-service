@@ -155,14 +155,14 @@ export default function Index() {
               <Card className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-0">
                   <div className="relative">
-                    <img src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/c20520f0-b56e-4056-8a2a-7d16803cad04.jpg" alt="До ремонта" className="w-full h-80 object-cover" />
+                    <img src="https://cdn.poehali.dev/files/camphoto_684387517.jpeg" alt="До ремонта" className="w-full h-80 object-cover" />
                     <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold">
                       ДО
                     </div>
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold mb-2">До ремонта</h4>
-                    <p className="text-muted-foreground">Повреждения, трещины, выцветшая гравировка</p>
+                    <p className="text-muted-foreground">Разрушенное основание, требует полной реконструкции</p>
                   </div>
                 </CardContent>
               </Card>
@@ -170,14 +170,14 @@ export default function Index() {
               <Card className="hover:shadow-xl transition-shadow">
                 <CardContent className="p-0">
                   <div className="relative">
-                    <img src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/f5e9b7e3-bdb9-4129-adf0-92443a749453.jpg" alt="После ремонта" className="w-full h-80 object-cover" />
+                    <img src="https://cdn.poehali.dev/files/IMG_4252.jpeg" alt="После ремонта" className="w-full h-80 object-cover" />
                     <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold">
                       ПОСЛЕ
                     </div>
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold mb-2">После ремонта</h4>
-                    <p className="text-muted-foreground">Полное восстановление, как новый памятник</p>
+                    <p className="text-muted-foreground">Новый гранитный памятник с благоустройством территории</p>
                   </div>
                 </CardContent>
               </Card>
