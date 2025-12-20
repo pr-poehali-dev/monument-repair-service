@@ -62,14 +62,22 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 text-8xl">🕊️</div>
+          <div className="absolute top-20 right-20 text-6xl">🌹</div>
+          <div className="absolute bottom-20 left-1/4 text-7xl">💐</div>
+          <div className="absolute bottom-10 right-1/3 text-6xl">🕊️</div>
+          <div className="absolute top-1/2 right-10 text-5xl">🌹</div>
+          <div className="absolute top-1/3 left-1/3 text-6xl">🕊️</div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">О компании</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
             ГК ГРАНИТ — создаём памятники любой сложности и формы. Индивидуальный подход к каждому заказу.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <Icon name="Award" size={32} className="text-primary" />
@@ -81,7 +89,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-shadow">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <Icon name="Clock" size={32} className="text-primary" />
@@ -93,7 +101,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-shadow">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <Icon name="DollarSign" size={32} className="text-primary" />
