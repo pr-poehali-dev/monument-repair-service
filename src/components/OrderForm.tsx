@@ -16,38 +16,35 @@ export default function OrderForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    const telegramMessage = `🔔 Новая заявка с сайта ГК ГРАНИТ\n\n👤 Имя: ${formData.name}\n📱 Телефон: ${formData.phone}\n💬 Сообщение: ${formData.message}`;
-    
-    const telegramBotToken = "YOUR_BOT_TOKEN";
-    const telegramChatId = "YOUR_CHAT_ID";
     
     try {
-      const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+      const response = await fetch('https://functions.poehali.dev/1df85ddf-3d17-4a16-8944-fe5835185e7d', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          chat_id: telegramChatId,
-          text: telegramMessage,
-          parse_mode: 'HTML'
+          name: formData.name,
+          phone: formData.phone,
+          message: formData.message
         })
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         toast({
           title: "Заявка отправлена!",
           description: "Мы свяжемся с вами в ближайшее время.",
         });
         setFormData({ name: "", phone: "", message: "" });
       } else {
-        throw new Error("Failed to send");
+        throw new Error(data.error || "Failed to send");
       }
     } catch (error) {
       toast({
         title: "Ошибка отправки",
-        description: "Пожалуйста, позвоните нам напрямую.",
+        description: "Пожалуйста, позвоните нам напрямую: +7 (949) 073-23-15",
         variant: "destructive"
       });
     } finally {
