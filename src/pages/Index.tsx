@@ -257,6 +257,18 @@ export default function Index() {
                   </p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#0088cc] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Send" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Telegram</h3>
+                  <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="text-lg text-[#0088cc] hover:underline">
+                    @GKgranit19
+                  </a>
+                </div>
+              </div>
             </div>
 
             <Card className="shadow-xl">
