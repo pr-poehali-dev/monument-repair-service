@@ -11,10 +11,16 @@ export default function Index() {
             <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
             <p className="text-sm text-muted-foreground">Памятники из гранита и мрамора</p>
           </div>
-          <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Icon name="Phone" size={20} />
-            <span className="hidden md:inline">+7 (949) 073-23-15</span>
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Icon name="Send" size={20} />
+              <span className="hidden md:inline">Telegram</span>
+            </a>
+            <a href="tel:+79490732315" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Icon name="Phone" size={20} />
+              <span className="hidden md:inline">+7 (949) 073-23-15</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -33,13 +39,17 @@ export default function Index() {
             Высокое качество по ценам ниже конкурентов
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8">
-              <Icon name="Phone" size={20} className="mr-2" />
-              Позвонить
-            </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20 text-lg px-8">
-              Узнать больше
-            </Button>
+            <a href="tel:+79490732315">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8">
+                <Icon name="Phone" size={20} className="mr-2" />
+                Позвонить
+              </Button>
+            </a>
+            <a href="#contacts">
+              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20 text-lg px-8">
+                Узнать больше
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -203,7 +213,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="contacts" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Контакты</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
