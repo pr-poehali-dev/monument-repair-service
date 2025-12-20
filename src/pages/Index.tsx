@@ -24,6 +24,7 @@ export default function Index() {
             </div>
           </div>
           <nav className="flex gap-6 text-sm md:text-base border-t border-gray-600 pt-3">
+            <a href="/" className="hover:text-primary transition-colors font-medium">Главная страница</a>
             <a href="#portfolio" className="hover:text-primary transition-colors font-medium">Наши работы</a>
             <a href="#shapes" className="hover:text-primary transition-colors font-medium">Формы памятников</a>
             <a href="#materials" className="hover:text-primary transition-colors font-medium">Материалы</a>
