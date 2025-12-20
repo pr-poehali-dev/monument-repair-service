@@ -145,7 +145,8 @@ export default function PortfolioAndContacts() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Адрес</h3>
                 <p className="text-gray-300">
-                  Республика Башкортостан
+                  Мариуполь, Киевский рынок<br />
+                  павильон 278, мкрн Восточный
                 </p>
               </CardContent>
             </Card>
