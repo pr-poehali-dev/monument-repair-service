@@ -13,12 +13,12 @@ export default function PortfolioAndContacts() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/76d11fe8-0de2-4a28-9e0f-09539e861b11.jpg', title: 'Двойной памятник из гранита' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg', title: 'Памятник с благоустройством' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/76d11fe8-0de2-4a28-9e0f-09539e861b11.jpg', title: 'Памятник из чёрного гранита' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg', title: 'Одиночный памятник с портретом' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/76d11fe8-0de2-4a28-9e0f-09539e861b11.jpg', title: 'Памятник с гравировкой' },
-              { img: 'https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg', title: 'Памятник из светлого гранита' }
+              { img: 'https://cdn.poehali.dev/files/IMG_7475.jpeg', title: 'Двойной памятник из гранита' },
+              { img: 'https://cdn.poehali.dev/files/1cb2cfa4-b4a6-4e64-a283-8887a8d71046.jpeg', title: 'Памятник с благоустройством' },
+              { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' },
+              { img: 'https://cdn.poehali.dev/files/IMG_4150.jpeg', title: 'Одиночный памятник с портретом' },
+              { img: 'https://cdn.poehali.dev/files/IMG_5256.jpeg', title: 'Памятник с гравировкой' },
+              { img: 'https://cdn.poehali.dev/files/IMG_5252.jpeg', title: 'Памятник из светлого гранита' }
             ].map((work, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
                 <img src={work.img} alt={work.title} className="w-full h-64 object-cover" />
