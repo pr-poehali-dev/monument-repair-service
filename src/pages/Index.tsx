@@ -137,7 +137,11 @@ export default function Index() {
             {[
               { img: 'https://cdn.poehali.dev/files/IMG_7475.jpeg', title: 'Двойной памятник из гранита' },
               { img: 'https://cdn.poehali.dev/files/1cb2cfa4-b4a6-4e64-a283-8887a8d71046.jpeg', title: 'Памятник с благоустройством' },
-              { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' }
+              { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' },
+              { img: 'https://cdn.poehali.dev/files/IMG_4150.jpeg', title: 'Одиночный памятник с портретом' },
+              { img: 'https://cdn.poehali.dev/files/1de67dfb-5ea6-4186-ae57-5d6bd877a2b7.jpeg', title: 'Двойной памятник с облицовкой' },
+              { img: 'https://cdn.poehali.dev/files/IMG_3871.jpeg', title: 'Памятник военному с портретом в камуфляже' },
+              { img: 'https://cdn.poehali.dev/files/045977b3-7706-471c-88b8-058a1bf417fc.jpeg', title: 'Семейный памятник из чёрного гранита' }
             ].map((item, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                 <img src={item.img} alt={item.title} className="w-full h-80 object-cover transition-transform group-hover:scale-110" />
