@@ -141,7 +141,12 @@ export default function Index() {
               { img: 'https://cdn.poehali.dev/files/IMG_4150.jpeg', title: 'Одиночный памятник с портретом' },
               { img: 'https://cdn.poehali.dev/files/1de67dfb-5ea6-4186-ae57-5d6bd877a2b7.jpeg', title: 'Двойной памятник с облицовкой' },
               { img: 'https://cdn.poehali.dev/files/IMG_3871.jpeg', title: 'Памятник военному с портретом в камуфляже' },
-              { img: 'https://cdn.poehali.dev/files/045977b3-7706-471c-88b8-058a1bf417fc.jpeg', title: 'Семейный памятник из чёрного гранита' }
+              { img: 'https://cdn.poehali.dev/files/045977b3-7706-471c-88b8-058a1bf417fc.jpeg', title: 'Семейный памятник из чёрного гранита' },
+              { img: 'https://cdn.poehali.dev/files/IMG_9164.jpeg', title: 'Двойной памятник с контрастной облицовкой' },
+              { img: 'https://cdn.poehali.dev/files/ddd4aecc-407e-4fc0-80c8-65aa5140c1ff.jpeg', title: 'Памятник с белой мраморной крошкой' },
+              { img: 'https://cdn.poehali.dev/files/IMG_0586.jpeg', title: 'Памятник футболисту с декором' },
+              { img: 'https://cdn.poehali.dev/files/20850f12-8e43-43a4-ae06-d6f38736ca92.jpeg', title: 'Двойной памятник в классическом стиле' },
+              { img: 'https://cdn.poehali.dev/files/IMG_0770.jpeg', title: 'Памятник с крестом и белой крошкой' }
             ].map((item, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                 <img src={item.img} alt={item.title} className="w-full h-80 object-cover transition-transform group-hover:scale-110" />
