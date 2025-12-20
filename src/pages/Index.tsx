@@ -206,8 +206,8 @@ export default function Index() {
       <section id="shapes" className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Формы памятников</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
-            Более 50 форм памятников. Изготовим памятник любой сложности по вашему эскизу
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-lg">
+            Более 250 различных форм памятников в каталоге. Изготовим любую форму по вашему эскизу или картинке из интернета.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
@@ -228,13 +228,18 @@ export default function Index() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <p className="text-lg text-muted-foreground mb-4">
-              Это лишь несколько примеров. У нас более 50 различных форм памятников!
-            </p>
+            <div className="max-w-3xl mx-auto mb-6">
+              <p className="text-lg text-muted-foreground mb-4">
+                Это лишь 4 примера из <span className="font-bold text-secondary">более 250 различных форм</span> в нашем каталоге!
+              </p>
+              <p className="text-base text-muted-foreground">
+                Покажите нам эскиз, фото из интернета или опишите вашу идею — и мы изготовим уникальный памятник по вашим пожеланиям.
+              </p>
+            </div>
             <a href="tel:+79490732315">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
                 <Icon name="Phone" size={20} className="mr-2" />
-                Узнать о всех формах
+                Заказать свою форму
               </Button>
             </a>
           </div>
