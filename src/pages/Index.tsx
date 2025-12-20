@@ -156,19 +156,21 @@ export default function Index() {
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
             Работаем с лучшими материалами
           </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { name: "Гранит Индия", desc: "Высокая плотность, глубокий черный цвет", icon: "Globe" },
-              { name: "Гранит Египет", desc: "Благородные оттенки, долговечность", icon: "Mountain" },
-              { name: "Гранит Карелия", desc: "Российское качество, морозостойкость", icon: "MapPin" }
+              { name: "Египетский серый", desc: "Элегантный серый оттенок, высокая прочность", icon: "Mountain" },
+              { name: "Индия черный", desc: "Глубокий черный цвет, высокая плотность", icon: "Circle" },
+              { name: "Карелия черный", desc: "Российское качество, морозостойкость", icon: "MapPin" },
+              { name: "Дымовский коричневый", desc: "Благородный коричневый оттенок, надежность", icon: "Hexagon" },
+              { name: "Индия красный", desc: "Насыщенный красный цвет, долговечность", icon: "Diamond" }
             ].map((material, idx) => (
               <Card key={idx} className="hover:shadow-xl transition-shadow">
                 <CardContent className="pt-6">
                   <div className="w-14 h-14 mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                     <Icon name={material.icon as any} size={28} className="text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">{material.name}</h3>
-                  <p className="text-muted-foreground">{material.desc}</p>
+                  <h3 className="text-xl font-bold mb-2">{material.name}</h3>
+                  <p className="text-muted-foreground text-sm">{material.desc}</p>
                 </CardContent>
               </Card>
             ))}
