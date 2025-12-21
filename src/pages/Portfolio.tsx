@@ -14,7 +14,7 @@ export default function Portfolio() {
             Примеры выполненных работ с установкой и благоустройством
           </p>
           <p className="text-center text-primary font-semibold mb-12">
-            Больше работ в нашем <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary/80">Telegram-канале</a>
+            Больше работ в нашем <a href="https://t.me/Pamyatniki_Mariupol_Granite" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary/80">Telegram-канале</a>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -88,7 +88,7 @@ export default function Portfolio() {
             Подписывайтесь на наш Telegram-канал, где мы регулярно публикуем фото новых проектов и делимся опытом работы
           </p>
           <a 
-            href="https://t.me/GKgranit19" 
+            href="https://t.me/Pamyatniki_Mariupol_Granite" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-8 py-3 rounded-lg transition-colors font-semibold"

@@ -21,7 +21,7 @@ export default function Header({ activeSection }: HeaderProps) {
             </div>
           </div>
           <div className="flex items-center gap-3 flex-wrap">
-            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-3 py-2 rounded-lg transition-colors">
+            <a href="https://t.me/Pamyatniki_Mariupol_Granite" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-3 py-2 rounded-lg transition-colors">
               <Icon name="Send" size={20} />
               <span className="hidden md:inline font-medium text-sm">Telegram</span>
             </a>

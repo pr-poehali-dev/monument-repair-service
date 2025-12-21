@@ -39,8 +39,8 @@ export default function Contacts() {
                   <Icon name="Send" size={32} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Telegram</h3>
-                <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-lg">
-                  @GKgranit19
+                <a href="https://t.me/Pamyatniki_Mariupol_Granite" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-lg">
+                  @Pamyatniki_Mariupol_Granite
                 </a>
               </CardContent>
             </Card>
