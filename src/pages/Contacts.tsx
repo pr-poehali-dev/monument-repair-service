@@ -9,9 +9,9 @@ export default function Contacts() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Контакты - Адрес, телефон, режим работы"
-        description="Контакты GK Granite: Мариуполь, Киевский рынок, павильон 278. Телефон: +7-918-548-06-79. Режим работы: 9:00-18:00 ежедневно. Telegram: @GKgranit19"
-        keywords="контакты, адрес, телефон, памятники Мариуполь, Киевский рынок"
+        title="Контакты - Адреса магазинов в Мариуполе и Таганроге"
+        description="Контакты GK Granite: Мариуполь (Киевский рынок, пав. 278) и Таганрог (ул. Пархоменко 7Г). Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22. Telegram: @GKgranit19. Изготовление памятников из гранита и мрамора."
+        keywords="контакты памятники, адрес Мариуполь, адрес Таганрог, памятники Мариуполь, памятники Таганрог, Киевский рынок, Пархоменко 7Г, GK Granite, изготовление памятников"
         canonical="https://gkgranitk.ru/contacts"
       />
       <Header activeSection="contacts" />
@@ -79,6 +79,57 @@ export default function Contacts() {
                 Позвонить сейчас
               </Button>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">Наши адреса на карте</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden hover:shadow-xl transition-all">
+              <CardContent className="p-0">
+                <div className="bg-secondary text-white p-4">
+                  <h3 className="text-2xl font-bold flex items-center gap-2">
+                    <Icon name="MapPin" size={24} />
+                    Мариуполь
+                  </h3>
+                  <p className="text-gray-300 mt-2">Киевский рынок, павильон 278, мкрн Восточный</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.5!2d37.543367!3d47.097133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA1JzQ5LjciTiAzN8KwMzInMzYuMSJF!5e0!3m2!1sru!2s!4v1234567890"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Карта Мариуполь"
+                ></iframe>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all">
+              <CardContent className="p-0">
+                <div className="bg-secondary text-white p-4">
+                  <h3 className="text-2xl font-bold flex items-center gap-2">
+                    <Icon name="MapPin" size={24} />
+                    Таганрог
+                  </h3>
+                  <p className="text-gray-300 mt-2">ул. Пархоменко 7Г</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.5!2d38.898!3d47.236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3bc0c0d0d0d0d%3A0x0!2z0J_QsNGA0YXQvtC80LXQvdC60L4gN9CT!5e0!3m2!1sru!2s!4v1234567890"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Карта Таганрог"
+                ></iframe>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
