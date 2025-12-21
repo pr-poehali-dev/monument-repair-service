@@ -19,7 +19,7 @@ export default function Prices() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "Стандарт 60×40×5",
+                title: "Гранит 60×40×5",
                 price: "50 000 ₽",
                 material: "Гранит",
                 features: [
@@ -33,8 +33,8 @@ export default function Prices() {
                 badgeColor: "bg-primary"
               },
               {
-                title: "Стандарт 80×40×5",
-                price: "65 000 ₽",
+                title: "Гранит 80×40×5",
+                price: "60 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 80×40×5 см",
@@ -46,38 +46,51 @@ export default function Prices() {
                 badge: null
               },
               {
-                title: "Увеличенный 100×50×5",
-                price: "85 000 ₽",
+                title: "Гранит 100×50×8",
+                price: "70 000 ₽",
                 material: "Гранит",
                 features: [
-                  "Размер: 100×50×5 см",
+                  "Размер: 100×50×8 см",
                   "Полировка с одной стороны",
-                  "Гравировка ФИО, дат и портрета",
+                  "Гравировка ФИО и дат",
                   "Установка в комплекте",
-                  "Подставка и цветник"
+                  "Подставка в комплекте"
                 ],
                 badge: null
               },
               {
-                title: "Двойной 120×60×5",
-                price: "от 140 000 ₽",
+                title: "Гранит 120×60×8",
+                price: "85 000 ₽",
                 material: "Гранит",
                 features: [
-                  "Размер: 120×60×5 см",
+                  "Размер: 120×60×8 см",
                   "Полировка с одной стороны",
                   "Гравировка для двоих",
                   "Установка в комплекте",
-                  "Подставка и благоустройство"
+                  "Подставка в комплекте"
                 ],
                 badge: "Семейный",
                 badgeColor: "bg-secondary"
               },
               {
-                title: "Эконом 60×40×5",
-                price: "25 000 ₽",
+                title: "Мрамор 60×40×7",
+                price: "40 000 ₽",
+                material: "Мрамор",
+                features: [
+                  "Размер: 60×40×7 см",
+                  "Белый мрамор",
+                  "Гравировка ФИО и дат",
+                  "Установка в комплекте",
+                  "Подставка в комплекте"
+                ],
+                badge: null
+              },
+              {
+                title: "Бетонный памятник",
+                price: "35 000 ₽",
                 material: "Бетон",
                 features: [
-                  "Размер: 60×40×5 см",
+                  "Стандартный размер",
                   "Прочный бетон",
                   "Гравировка ФИО и дат",
                   "Установка в комплекте",
@@ -85,20 +98,6 @@ export default function Prices() {
                 ],
                 badge: "Выгодно",
                 badgeColor: "bg-green-600"
-              },
-              {
-                title: "Индивидуальный проект",
-                price: "от 100 000 ₽",
-                material: "На выбор",
-                features: [
-                  "Любые размеры и формы",
-                  "Авторский дизайн",
-                  "Фигурные вырезы",
-                  "Художественная гравировка",
-                  "Полное благоустройство"
-                ],
-                badge: "Премиум",
-                badgeColor: "bg-amber-600"
               }
             ].map((plan, idx) => (
               <Card key={idx} className="hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-t-primary relative overflow-hidden">
@@ -143,8 +142,10 @@ export default function Prices() {
                     <Icon name="Info" size={32} className="text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2">Дополнительные услуги</h3>
+                    <h3 className="text-xl font-bold mb-2">Дополнительные товары и услуги</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• Вазы гранитные — от 6 500 ₽</li>
+                      <li>• Лампады гранитные — от 7 000 ₽</li>
                       <li>• Художественная гравировка портрета — от 5 000 ₽</li>
                       <li>• Гравировка орнамента и узоров — от 3 000 ₽</li>
                       <li>• Фигурные вырезы и формы — от 8 000 ₽</li>
