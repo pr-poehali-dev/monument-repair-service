@@ -57,11 +57,17 @@ export default function Contacts() {
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="MapPin" size={32} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Адрес</h3>
-                <p className="text-gray-300">
-                  Мариуполь, Киевский рынок<br />
-                  павильон 278, мкрн Восточный
-                </p>
+                <h3 className="text-xl font-bold mb-2">Адреса магазинов</h3>
+                <div className="text-gray-300 space-y-3">
+                  <div>
+                    <p className="font-semibold text-white">Мариуполь</p>
+                    <p>Киевский рынок<br />павильон 278, мкрн Восточный</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-white">Таганрог</p>
+                    <p>ул. Пархоменко 7Г</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
