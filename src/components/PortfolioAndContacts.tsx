@@ -172,7 +172,7 @@ export default function PortfolioAndContacts() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.685992%2C47.120310&z=17&pt=37.685992,47.120310,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=37.685992,47.120310&z=17&l=map&pt=37.685992,47.120310,pm2rdm"
                     width="100%"
                     height="300"
                     frameBorder="0"
@@ -189,7 +189,7 @@ export default function PortfolioAndContacts() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=38.867057%2C47.222592&z=17&pt=38.867057,47.222592,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=38.867057,47.222592&z=17&l=map&pt=38.867057,47.222592,pm2rdm"
                     width="100%"
                     height="300"
                     frameBorder="0"
