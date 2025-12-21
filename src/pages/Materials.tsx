@@ -70,6 +70,22 @@ export default function Materials() {
                 features: ["Доступная цена", "Быстрое изготовление", "Различные варианты отделки"],
                 img: "https://cdn.poehali.dev/files/IMG_7946.jpg",
                 badge: "Эконом"
+              },
+              { 
+                title: "Гранит Карелия", 
+                subtitle: "Карелия, Россия",
+                desc: "Натуральный карельский гранит серого цвета с природным узором.",
+                features: ["Доступная цена", "Морозостойкий", "Долговечность 50+ лет"],
+                img: "https://cdn.poehali.dev/files/IMG_4264.jpeg",
+                badge: "Эконом"
+              },
+              { 
+                title: "Мраморная крошка", 
+                subtitle: "Россия",
+                desc: "Экономичный вариант из мраморной крошки с полимерным связующим.",
+                features: ["Самая доступная цена", "Лёгкий вес", "Простота монтажа"],
+                img: "https://cdn.poehali.dev/files/IMG_4264.jpeg",
+                badge: "Эконом"
               }
             ].map((material, idx) => (
               <Card key={idx} className="hover:shadow-xl transition-all border-t-4 border-t-primary overflow-hidden">
