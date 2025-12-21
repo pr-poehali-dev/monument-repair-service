@@ -43,25 +43,25 @@ export default function Header({ activeSection }: HeaderProps) {
             Главная страница
           </a>
           <a 
-            href="#portfolio" 
+            href="/portfolio" 
             className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "portfolio" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Наши работы
           </a>
           <a 
-            href="#shapes" 
+            href="/shapes" 
             className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "shapes" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Формы памятников
           </a>
           <a 
-            href="#materials" 
+            href="/materials" 
             className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "materials" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Материалы
           </a>
           <a 
-            href="#contacts" 
+            href="/contacts" 
             className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "contacts" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
             Контакты

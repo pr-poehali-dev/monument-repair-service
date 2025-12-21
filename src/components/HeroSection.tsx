@@ -24,7 +24,7 @@ export default function HeroSection() {
               Позвонить
             </Button>
           </a>
-          <a href="#contacts">
+          <a href="/contacts">
             <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20 text-lg px-8">
               Узнать больше
             </Button>
