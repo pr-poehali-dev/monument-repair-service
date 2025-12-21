@@ -4,7 +4,7 @@ export default function FloatingButtons() {
   return (
     <div className="fixed left-6 bottom-6 z-50 flex flex-col gap-4">
       <a
-        href="https://t.me/+79173347022"
+        href="https://t.me/GKgranit19"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#0088cc] hover:bg-[#006699] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
@@ -21,16 +21,6 @@ export default function FloatingButtons() {
         aria-label="WhatsApp"
       >
         <Icon name="MessageCircle" size={24} />
-      </a>
-
-      <a
-        href="https://msng.link/o?79173347022=max"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-14 h-14 bg-[#00B2FF] hover:bg-[#0099DD] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
-        aria-label="MAX Messenger"
-      >
-        <Icon name="MessageSquareText" size={24} />
       </a>
     </div>
   );
