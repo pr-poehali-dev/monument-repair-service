@@ -6,6 +6,7 @@ import OrderForm from "@/components/OrderForm";
 import PortfolioAndContacts from "@/components/PortfolioAndContacts";
 import FAQ from "@/components/FAQ";
 import FloatingButtons from "@/components/FloatingButtons";
+import TopContactBar from "@/components/TopContactBar";
 import SEO from "@/components/SEO";
 
 export default function Index() {
@@ -46,6 +47,7 @@ export default function Index() {
         keywords="памятники Мариуполь, памятники из гранита, изготовление памятников, установка памятников, гравировка портретов, благоустройство захоронений, памятники ДНР, памятники Ростовская область"
         canonical="https://gkgranitk.ru"
       />
+      <TopContactBar />
       <Header activeSection={activeSection} />
       <HeroSection />
       <AboutAndServices />
