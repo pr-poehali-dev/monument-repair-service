@@ -8,12 +8,12 @@ export default function Header({ activeSection }: HeaderProps) {
   return (
     <header className="bg-secondary text-white py-4 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-3">
-          <div className="flex items-center gap-3">
+        <div className="flex justify-between items-start mb-3">
+          <div className="flex items-start gap-3">
             <img 
               src="https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg" 
               alt="ГК ГРАНИТ" 
-              className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover"
+              className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover mt-1"
             />
             <div>
               <h1 className="text-2xl md:text-3xl font-bold">ГК ГРАНИТ</h1>
@@ -21,9 +21,9 @@ export default function Header({ activeSection }: HeaderProps) {
             </div>
           </div>
           <div className="flex items-center gap-3 flex-wrap">
-            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-3 py-2 rounded-lg transition-colors">
-              <Icon name="Send" size={20} />
-              <span className="hidden md:inline font-medium text-sm">Telegram</span>
+            <a href="https://t.me/GKgranit19" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 bg-[#0088cc] hover:bg-[#006699] text-white px-2.5 py-1.5 rounded-lg transition-colors text-sm">
+              <Icon name="Send" size={16} />
+              <span className="hidden md:inline font-medium">Telegram</span>
             </a>
             <a href="tel:+79490732315" className="flex items-center gap-1 hover:text-primary transition-colors">
               <Icon name="Phone" size={18} />
