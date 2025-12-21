@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutAndServices from "@/components/AboutAndServices";
 import OrderForm from "@/components/OrderForm";
 import PortfolioAndContacts from "@/components/PortfolioAndContacts";
+import FAQ from "@/components/FAQ";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
 
@@ -50,6 +51,7 @@ export default function Index() {
       <AboutAndServices />
       <OrderForm />
       <PortfolioAndContacts />
+      <FAQ />
       <FloatingButtons />
     </div>
   );
