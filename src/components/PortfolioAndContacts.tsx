@@ -165,6 +165,45 @@ export default function PortfolioAndContacts() {
               </Button>
             </a>
           </div>
+
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-center mb-6">Мы на карте</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
+                <CardContent className="p-0">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=37.685992%2C47.120310&z=17&pt=37.685992,47.120310,pm2rdm"
+                    width="100%"
+                    height="300"
+                    frameBorder="0"
+                    className="w-full"
+                    title="Мариуполь, Киевский рынок"
+                  ></iframe>
+                  <div className="p-4">
+                    <h4 className="font-bold text-lg mb-1">Мариуполь</h4>
+                    <p className="text-gray-300 text-sm">Киевский рынок, павильон 278, мкрн Восточный</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
+                <CardContent className="p-0">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=38.867057%2C47.222592&z=17&pt=38.867057,47.222592,pm2rdm"
+                    width="100%"
+                    height="300"
+                    frameBorder="0"
+                    className="w-full"
+                    title="Таганрог, Пархоменко"
+                  ></iframe>
+                  <div className="p-4">
+                    <h4 className="font-bold text-lg mb-1">Таганрог</h4>
+                    <p className="text-gray-300 text-sm">ул. Пархоменко</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
