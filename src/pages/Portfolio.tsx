@@ -1,10 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Portfolio() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Наши работы - Портфолио выполненных проектов"
+        description="Примеры выполненных работ по изготовлению и установке памятников из гранита. Художественная гравировка, благоустройство захоронений, индивидуальный дизайн. Мариуполь, ДНР."
+        keywords="портфолио памятников, примеры работ, фото памятников, выполненные проекты"
+        canonical="https://gkgranitk.ru/portfolio"
+      />
       <Header activeSection="portfolio" />
       
       <section className="py-20 bg-white">
@@ -65,7 +72,12 @@ export default function Portfolio() {
               }
             ].map((work, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
-                <img src={work.img} alt={work.title} className="w-full h-64 object-cover" />
+                <img 
+                  src={work.img} 
+                  alt={work.title} 
+                  className="w-full h-64 object-cover" 
+                  loading="lazy"
+                />
                 <CardContent className="p-4">
                   <h3 className="font-bold text-lg mb-2">{work.title}</h3>
                   <p className="text-sm text-muted-foreground">{work.desc}</p>

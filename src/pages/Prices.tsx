@@ -3,10 +3,17 @@ import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Prices() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Цены на памятники в Мариуполе - Стоимость под ключ"
+        description="Цены на изготовление и установку памятников под ключ. Одиночные памятники от 30,000₽, двойные от 45,000₽, с благоустройством. Прозрачные цены, без скрытых доплат."
+        keywords="цены на памятники, стоимость памятников, памятники под ключ, цены Мариуполь"
+        canonical="https://gkgranitk.ru/prices"
+      />
       <Header activeSection="prices" />
       
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">

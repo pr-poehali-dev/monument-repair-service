@@ -2,10 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Shapes() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Формы памятников - Вертикальные, горизонтальные, фигурные"
+        description="Широкий выбор форм памятников из гранита: вертикальные, горизонтальные, фигурные, двойные. Индивидуальный дизайн по вашему желанию. Мариуполь."
+        keywords="формы памятников, вертикальные памятники, горизонтальные памятники, фигурные памятники, двойные памятники"
+        canonical="https://gkgranitk.ru/shapes"
+      />
       <Header activeSection="shapes" />
       
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">

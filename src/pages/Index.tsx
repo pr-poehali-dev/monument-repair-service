@@ -5,6 +5,7 @@ import AboutAndServices from "@/components/AboutAndServices";
 import OrderForm from "@/components/OrderForm";
 import PortfolioAndContacts from "@/components/PortfolioAndContacts";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState("home");
@@ -38,6 +39,12 @@ export default function Index() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Памятники из гранита в Мариуполе"
+        description="Изготовление и установка памятников из гранита в Мариуполе. Художественная гравировка портретов, благоустройство захоронений. Доставка в ДНР и Ростовскую область. ☎️ +7-918-548-06-79"
+        keywords="памятники Мариуполь, памятники из гранита, изготовление памятников, установка памятников, гравировка портретов, благоустройство захоронений, памятники ДНР, памятники Ростовская область"
+        canonical="https://gkgranitk.ru"
+      />
       <Header activeSection={activeSection} />
       <HeroSection />
       <AboutAndServices />

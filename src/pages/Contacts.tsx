@@ -3,10 +3,17 @@ import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Contacts() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Контакты - Адрес, телефон, режим работы"
+        description="Контакты GK Granite: Мариуполь, Киевский рынок, павильон 278. Телефон: +7-918-548-06-79. Режим работы: 9:00-18:00 ежедневно. Telegram: @GKgranit19"
+        keywords="контакты, адрес, телефон, памятники Мариуполь, Киевский рынок"
+        canonical="https://gkgranitk.ru/contacts"
+      />
       <Header activeSection="contacts" />
       
       <section className="py-20 bg-secondary text-white">

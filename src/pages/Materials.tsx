@@ -2,10 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
+import SEO from "@/components/SEO";
 
 export default function Materials() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Материалы - Гранит, мрамор, камень"
+        description="Работаем с лучшими материалами: чёрный гранит Абсолют Блэк, красный гранит Лезниковский, белый мрамор, серый гранит. Высокое качество и долговечность."
+        keywords="гранит, мрамор, Абсолют Блэк, Лезниковский гранит, материалы для памятников"
+        canonical="https://gkgranitk.ru/materials"
+      />
       <Header activeSection="materials" />
       
       <section className="py-20 bg-muted">
