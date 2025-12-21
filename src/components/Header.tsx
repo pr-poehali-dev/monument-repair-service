@@ -61,6 +61,12 @@ export default function Header({ activeSection }: HeaderProps) {
             Материалы
           </a>
           <a 
+            href="/prices" 
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "prices" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+          >
+            Цены
+          </a>
+          <a 
             href="/contacts" 
             className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "contacts" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
           >
