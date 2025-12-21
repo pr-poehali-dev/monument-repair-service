@@ -62,11 +62,6 @@ export default function Portfolio() {
                 img: 'https://cdn.poehali.dev/files/IMG_4252.jpeg', 
                 title: 'Вертикальный памятник',
                 desc: 'Чёрный гранит с портретом и декоративной гравировкой розы'
-              },
-              { 
-                img: 'https://cdn.poehali.dev/files/96de765c-55da-4ffe-b5a3-e2ea06b6add2.jpeg', 
-                title: 'Памятник с декоративной отсыпкой',
-                desc: 'Чёрный гранит с портретом, установка с белой мраморной крошкой'
               }
             ].map((work, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
