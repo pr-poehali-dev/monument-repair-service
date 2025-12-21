@@ -4,9 +4,14 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "GK Granite",
+    "@id": "https://gkgranitk.ru/#organization",
+    "name": "ГК ГРАНИТ",
+    "alternateName": "GK Granite",
+    "legalName": "ГК ГРАНИТ",
     "description": "Изготовление и установка памятников из гранита в Мариуполе и Таганроге. Доставка в ДНР и Ростовскую область. Гравировка портретов, благоустройство мест захоронения.",
+    "foundingDate": "2015",
     "image": "https://cdn.poehali.dev/files/IMG_8835.jpeg",
+    "logo": "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg",
     "address": [
       {
         "@type": "PostalAddress",

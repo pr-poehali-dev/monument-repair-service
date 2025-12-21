@@ -53,7 +53,7 @@ export default function OrderForm() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-20 bg-gradient-to-b from-white to-slate-50" itemScope itemType="https://schema.org/ContactPoint">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Оставить заявку</h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">

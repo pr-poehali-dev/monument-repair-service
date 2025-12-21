@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50" itemScope itemType="https://schema.org/FAQPage">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">
@@ -62,10 +62,13 @@ export default function FAQ() {
               key={index} 
               className="overflow-hidden hover:shadow-lg transition-all cursor-pointer border-l-4 border-l-primary"
               onClick={() => toggleFAQ(index)}
+              itemScope
+              itemProp="mainEntity"
+              itemType="https://schema.org/Question"
             >
               <CardContent className="p-6">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-lg md:text-xl font-bold text-secondary flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-secondary flex-1" itemProp="name">
                     {faq.question}
                   </h3>
                   <Icon 
@@ -75,9 +78,11 @@ export default function FAQ() {
                   />
                 </div>
                 {openIndex === index && (
-                  <p className="mt-4 text-gray-700 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <p className="mt-4 text-gray-700 leading-relaxed" itemProp="text">
+                      {faq.answer}
+                    </p>
+                  </div>
                 )}
               </CardContent>
             </Card>

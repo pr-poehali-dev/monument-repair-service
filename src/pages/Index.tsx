@@ -39,7 +39,7 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <>
       <SEO 
         title="Памятники из гранита в Мариуполе"
         description="Изготовление и установка памятников из гранита в Мариуполе. Художественная гравировка портретов, благоустройство захоронений. Доставка в ДНР и Ростовскую область. ☎️ +7-918-548-06-79"
@@ -47,12 +47,14 @@ export default function Index() {
         canonical="https://gkgranitk.ru"
       />
       <Header activeSection={activeSection} />
-      <HeroSection />
-      <AboutAndServices />
-      <OrderForm />
-      <PortfolioAndContacts />
-      <FAQ />
+      <main role="main">
+        <HeroSection />
+        <AboutAndServices />
+        <OrderForm />
+        <PortfolioAndContacts />
+        <FAQ />
+      </main>
       <FloatingButtons />
-    </div>
+    </>
   );
 }

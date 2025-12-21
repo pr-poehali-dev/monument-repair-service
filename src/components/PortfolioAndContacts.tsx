@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon";
 export default function PortfolioAndContacts() {
   return (
     <>
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-white" itemScope itemType="https://schema.org/ImageGallery">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Наши работы</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
@@ -20,10 +20,10 @@ export default function PortfolioAndContacts() {
               { img: 'https://cdn.poehali.dev/files/1cb2cfa4-b4a6-4e64-a283-8887a8d71046.jpeg', title: 'Памятник с благоустройством' },
               { img: 'https://cdn.poehali.dev/files/IMG_8886.jpeg', title: 'Памятник из чёрного гранита' }
             ].map((work, idx) => (
-              <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2">
-                <img src={work.img} alt={work.title} className="w-full h-64 object-cover" />
+              <Card key={idx} className="overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2" itemScope itemType="https://schema.org/ImageObject">
+                <img src={work.img} alt={work.title} className="w-full h-64 object-cover" itemProp="contentUrl" loading="lazy" />
                 <CardContent className="p-4">
-                  <h3 className="font-bold text-lg text-center">{work.title}</h3>
+                  <h3 className="font-bold text-lg text-center" itemProp="name">{work.title}</h3>
                 </CardContent>
               </Card>
             ))}
@@ -107,7 +107,7 @@ export default function PortfolioAndContacts() {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 bg-secondary text-white">
+      <section id="contacts" className="py-20 bg-secondary text-white" itemScope itemType="https://schema.org/ContactPage">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Контакты</h2>
           <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">

@@ -1,10 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://gkgranitk.ru/sitemap.xml
+
+# Основные поисковики
 User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Yandex
 Allow: /
 
-User-agent: Yandex
+User-agent: Bingbot
 Allow: /
 
 User-agent: Twitterbot
@@ -13,7 +21,12 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Блокируем агрессивных ботов
+User-agent: AhrefsBot
+Disallow: /
 
-Sitemap: https://gkgranitk.ru/sitemap.xml
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10

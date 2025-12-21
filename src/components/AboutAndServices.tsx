@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 export default function AboutAndServices() {
   return (
     <>
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden" itemScope itemType="https://schema.org/Organization">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 text-8xl">🕊️</div>
           <div className="absolute top-20 right-20 text-6xl">🌹</div>
@@ -15,7 +15,7 @@ export default function AboutAndServices() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">О компании</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg" itemProp="description">
             ГК ГРАНИТ — создаём памятники любой сложности и формы. Индивидуальный подход к каждому заказу.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -58,9 +58,9 @@ export default function AboutAndServices() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-muted" itemScope itemType="https://schema.org/Service">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Наши услуги</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary" itemProp="serviceType">Наши услуги</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
             Полный комплекс услуг по изготовлению и установке памятников
           </p>
@@ -76,8 +76,8 @@ export default function AboutAndServices() {
                   <div className="w-16 h-16 mx-auto mb-4 bg-secondary rounded-full flex items-center justify-center">
                     <Icon name={service.icon as any} size={28} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm">{service.desc}</p>
+                  <h3 className="text-xl font-bold mb-2" itemProp="name">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm" itemProp="description">{service.desc}</p>
                 </CardContent>
               </Card>
             ))}
