@@ -11,6 +11,7 @@ import Shapes from "./pages/Shapes";
 import Materials from "./pages/Materials";
 import Prices from "./pages/Prices";
 import Contacts from "./pages/Contacts";
+import Reviews from "./pages/Reviews";
 import NotFound from "./pages/NotFound";
 import StructuredData from "./components/StructuredData";
 
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/materials" element={<Materials />} />
             <Route path="/prices" element={<Prices />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/reviews" element={<Reviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

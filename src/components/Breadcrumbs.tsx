@@ -11,6 +11,9 @@ const routeMap: Record<string, string> = {
   '/portfolio': 'Портфолио',
   '/prices': 'Цены',
   '/contacts': 'Контакты',
+  '/reviews': 'Отзывы',
+  '/materials': 'Материалы',
+  '/shapes': 'Формы памятников',
   '/about': 'О компании'
 };
 

@@ -74,6 +74,12 @@ export default function Header({ activeSection }: HeaderProps) {
           >
             Контакты
           </a>
+          <a 
+            href="/reviews" 
+            className={`hover:text-primary transition-colors font-medium whitespace-nowrap ${activeSection === "reviews" ? "text-primary border-b-2 border-primary pb-1" : ""}`}
+          >
+            Отзывы
+          </a>
         </nav>
       </div>
     </header>
