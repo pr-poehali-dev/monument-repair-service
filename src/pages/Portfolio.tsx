@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Portfolio() {
   return (
@@ -13,6 +14,7 @@ export default function Portfolio() {
         canonical="https://gkgranitk.ru/portfolio"
       />
       <Header activeSection="portfolio" />
+      <Breadcrumbs />
       
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">

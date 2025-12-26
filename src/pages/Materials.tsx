@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Materials() {
   return (
@@ -14,6 +15,7 @@ export default function Materials() {
         canonical="https://gkgranitk.ru/materials"
       />
       <Header activeSection="materials" />
+      <Breadcrumbs />
       
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">

@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Shapes() {
   return (
@@ -14,6 +15,7 @@ export default function Shapes() {
         canonical="https://gkgranitk.ru/shapes"
       />
       <Header activeSection="shapes" />
+      <Breadcrumbs />
       
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-4">

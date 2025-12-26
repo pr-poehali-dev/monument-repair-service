@@ -4,6 +4,7 @@ import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Prices() {
   return (
@@ -15,6 +16,7 @@ export default function Prices() {
         canonical="https://gkgranitk.ru/prices"
       />
       <Header activeSection="prices" />
+      <Breadcrumbs />
       
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-4">

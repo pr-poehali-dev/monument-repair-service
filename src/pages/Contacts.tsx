@@ -4,6 +4,7 @@ import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Contacts() {
   return (
@@ -15,6 +16,7 @@ export default function Contacts() {
         canonical="https://gkgranitk.ru/contacts"
       />
       <Header activeSection="contacts" />
+      <Breadcrumbs />
       
       <section className="py-20 bg-secondary text-white">
         <div className="container mx-auto px-4">
