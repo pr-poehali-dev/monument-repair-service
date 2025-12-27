@@ -12,10 +12,13 @@ export default function HeroSection() {
       />
       <div className="relative z-10 text-center px-4 max-w-4xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-          Памятники с душой и достоинством
+          Изготовление памятников в Мариуполе
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Высокое качество по ценам ниже конкурентов
+        <p className="text-xl md:text-2xl mb-4 text-gray-200">
+          Установка, ремонт и реставрация памятников из гранита
+        </p>
+        <p className="text-lg md:text-xl mb-8 text-gray-300">
+          Работаем в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске и Таганроге
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:+79490732315">
