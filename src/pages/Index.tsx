@@ -5,6 +5,7 @@ import AboutAndServices from "@/components/AboutAndServices";
 import OrderForm from "@/components/OrderForm";
 import PortfolioAndContacts from "@/components/PortfolioAndContacts";
 import FAQ from "@/components/FAQ";
+import SEOTextBlock from "@/components/SEOTextBlock";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
 
@@ -53,6 +54,7 @@ export default function Index() {
         <OrderForm />
         <PortfolioAndContacts />
         <FAQ />
+        <SEOTextBlock />
       </main>
       <FloatingButtons />
     </>
