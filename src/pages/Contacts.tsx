@@ -11,8 +11,8 @@ export default function Contacts() {
     <div className="min-h-screen">
       <SEO 
         title="Контакты - Адреса магазинов в Мариуполе и Таганроге"
-        description="Контакты GK Granite: Мариуполь (Киевский рынок, пав. 278) и Таганрог (ул. Пархоменко 7Г). Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22. Telegram: @GKgranit19. Изготовление памятников из гранита и мрамора."
-        keywords="контакты памятники, адрес Мариуполь, адрес Таганрог, памятники Мариуполь, памятники Таганрог, Киевский рынок, Пархоменко 7Г, GK Granite, изготовление памятников"
+        description="Контакты GK Granite: Мариуполь (Киевский рынок, пав. 278; ул. Каффайская, 69, рынок «Эдельвейс», пав. 33) и Таганрог (ул. Пархоменко 7Г). Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22. Telegram: @GKgranit19. Изготовление памятников из гранита и мрамора."
+        keywords="контакты памятники, адрес Мариуполь, адрес Таганрог, памятники Мариуполь, памятники Таганрог, Киевский рынок, Пархоменко 7Г, Каффайская, рынок Эдельвейс, GK Granite, изготовление памятников"
         canonical="https://gkgranitk.ru/contacts"
       />
       <Header activeSection="contacts" />
@@ -66,6 +66,10 @@ export default function Contacts() {
                     <p>Киевский рынок<br />павильон 278, мкрн Восточный</p>
                   </div>
                   <div>
+                    <p className="font-semibold text-white">Мариуполь</p>
+                    <p>ул. Каффайская, 69<br />рынок «Эдельвейс», павильон 33<br />вход с рынка и со стороны ул. Готфейской</p>
+                  </div>
+                  <div>
                     <p className="font-semibold text-white">Таганрог</p>
                     <p>ул. Пархоменко 7Г</p>
                   </div>
@@ -88,7 +92,7 @@ export default function Contacts() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">Наши адреса на карте</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="overflow-hidden hover:shadow-xl transition-all">
               <CardContent className="p-0">
                 <div className="bg-secondary text-white p-4">
@@ -106,7 +110,29 @@ export default function Contacts() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Карта Мариуполь"
+                  title="Карта Мариуполь Киевский рынок"
+                ></iframe>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all">
+              <CardContent className="p-0">
+                <div className="bg-secondary text-white p-4">
+                  <h3 className="text-2xl font-bold flex items-center gap-2">
+                    <Icon name="MapPin" size={24} />
+                    Мариуполь
+                  </h3>
+                  <p className="text-gray-300 mt-2">ул. Каффайская, 69, рынок «Эдельвейс», павильон 33</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.5!2d37.543367!3d47.097133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA1JzQ5LjciTiAzN8KwMzInMzYuMSJF!5e0!3m2!1sru!2s!4v1234567890"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Карта Мариуполь рынок Эдельвейс"
                 ></iframe>
               </CardContent>
             </Card>

@@ -148,10 +148,14 @@ export default function PortfolioAndContacts() {
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="MapPin" size={32} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Адрес</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl font-bold mb-2">Адреса</h3>
+                <p className="text-gray-300 mb-2">
                   Мариуполь, Киевский рынок<br />
                   павильон 278, мкрн Восточный
+                </p>
+                <p className="text-gray-300">
+                  Мариуполь, ул. Каффайская, 69<br />
+                  рынок «Эдельвейс», павильон 33
                 </p>
               </CardContent>
             </Card>
