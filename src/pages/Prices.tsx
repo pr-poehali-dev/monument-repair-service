@@ -69,7 +69,7 @@ export default function Prices() {
               },
               {
                 title: "Гранит 120×60×8",
-                price: "95 000 ₽",
+                price: "110 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 120×60×8 см",
