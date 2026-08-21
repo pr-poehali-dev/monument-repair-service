@@ -153,9 +153,12 @@ export default function PortfolioAndContacts() {
                   Мариуполь, Киевский рынок<br />
                   павильон 278, мкрн Восточный
                 </p>
-                <p className="text-gray-300">
+                <p className="text-gray-300 mb-2">
                   Мариуполь, ул. Каффайская, 69<br />
                   рынок «Эдельвейс», павильон 33
+                </p>
+                <p className="text-gray-300">
+                  Ростов-на-Дону, ул. Обсерваторная, 30
                 </p>
               </CardContent>
             </Card>
