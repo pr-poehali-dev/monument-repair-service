@@ -10,9 +10,9 @@ export default function Prices() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Цены на памятники в Мариуполе - Стоимость под ключ"
-        description="Цены на изготовление и установку памятников под ключ. Одиночные памятники от 40,000₽, двойные от 55,000₽, с благоустройством. Прозрачные цены, без скрытых доплат."
-        keywords="цены на памятники, стоимость памятников, памятники под ключ, цены Мариуполь"
+        title="Памятники в Мариуполе - Запросить цену под ключ"
+        description="Изготовление и установка памятников под ключ. Одиночные, двойные, с благоустройством. Индивидуальный расчёт стоимости — запросите цену в мессенджере MAX."
+        keywords="памятники Мариуполь, стоимость памятников, памятники под ключ, запросить цену"
         canonical="https://gkgranitk.ru/prices"
       />
       <Header activeSection="prices" />
@@ -20,16 +20,15 @@ export default function Prices() {
       
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Цены на памятники</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Памятники под ключ</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
-            Указаны цены с установкой "под ключ"
+            Индивидуальный расчёт стоимости — запросите цену в мессенджере MAX
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 title: "Гранит 60×40×5",
-                price: "60 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 60×40×5 см",
@@ -43,7 +42,6 @@ export default function Prices() {
               },
               {
                 title: "Гранит 80×40×5",
-                price: "70 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 80×40×5 см",
@@ -56,7 +54,6 @@ export default function Prices() {
               },
               {
                 title: "Гранит 100×50×8",
-                price: "80 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 100×50×8 см",
@@ -69,7 +66,6 @@ export default function Prices() {
               },
               {
                 title: "Гранит 120×60×8",
-                price: "110 000 ₽",
                 material: "Гранит",
                 features: [
                   "Размер: 120×60×8 см",
@@ -83,7 +79,6 @@ export default function Prices() {
               },
               {
                 title: "Мрамор 60×40×7",
-                price: "50 000 ₽",
                 material: "Мрамор",
                 features: [
                   "Размер: 60×40×7 см",
@@ -96,7 +91,6 @@ export default function Prices() {
               },
               {
                 title: "Бетонный памятник",
-                price: "45 000 ₽",
                 material: "Бетон",
                 features: [
                   "Стандартный размер",
@@ -118,7 +112,6 @@ export default function Prices() {
                 <CardHeader>
                   <CardTitle className="text-2xl text-center">{plan.title}</CardTitle>
                   <div className="text-center mt-2">
-                    <div className="text-4xl font-bold text-primary">{plan.price}</div>
                     <p className="text-sm text-muted-foreground mt-1">{plan.material}</p>
                   </div>
                 </CardHeader>
@@ -132,9 +125,10 @@ export default function Prices() {
                     ))}
                   </ul>
                   <div className="mt-6">
-                    <a href="/contacts">
+                    <a href="https://max.ru/u/f9LHodD0cOJBDiyrlT3QHa6s5pV6qXdU_m3_IooC7Tsqp79NEd8lO8xZPYs" target="_blank" rel="noopener noreferrer">
                       <Button className="w-full bg-secondary hover:bg-secondary/90">
-                        Заказать
+                        <Icon name="MessageCircle" size={18} className="mr-2" />
+                        Запросить цену
                       </Button>
                     </a>
                   </div>
@@ -153,15 +147,16 @@ export default function Prices() {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2">Дополнительные товары и услуги</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Вазы гранитные — от 16 500 ₽</li>
-                      <li>• Лампады гранитные — от 17 000 ₽</li>
-                      <li>• Художественная гравировка портрета — от 15 000 ₽</li>
-                      <li>• Гравировка орнамента и узоров — от 13 000 ₽</li>
-                      <li>• Фигурные вырезы и формы — от 18 000 ₽</li>
-                      <li>• Цветник из гранита — от 25 000 ₽</li>
-                      <li>• Благоустройство участка — от 30 000 ₽</li>
-                      <li>• Реставрация старых памятников — от 20 000 ₽</li>
+                      <li>• Вазы гранитные</li>
+                      <li>• Лампады гранитные</li>
+                      <li>• Художественная гравировка портрета</li>
+                      <li>• Гравировка орнамента и узоров</li>
+                      <li>• Фигурные вырезы и формы</li>
+                      <li>• Цветник из гранита</li>
+                      <li>• Благоустройство участка</li>
+                      <li>• Реставрация старых памятников</li>
                     </ul>
+                    <p className="text-sm text-muted-foreground mt-3">Стоимость уточняйте в мессенджере MAX</p>
                   </div>
                 </div>
               </CardContent>
@@ -172,10 +167,10 @@ export default function Prices() {
             <p className="text-muted-foreground mb-4">
               Точную стоимость рассчитаем индивидуально с учётом ваших пожеланий
             </p>
-            <a href="tel:+79490732315">
+            <a href="https://max.ru/u/f9LHodD0cOJBDiyrlT3QHa6s5pV6qXdU_m3_IooC7Tsqp79NEd8lO8xZPYs" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-xl px-12 py-6">
-                <Icon name="Phone" size={24} className="mr-3" />
-                Позвонить для расчёта
+                <Icon name="MessageCircle" size={24} className="mr-3" />
+                Запросить цену в MAX
               </Button>
             </a>
           </div>
