@@ -22,6 +22,16 @@ export default function FloatingButtons() {
       >
         <Icon name="MessageCircle" size={24} />
       </a>
+
+      <a
+        href="https://max.ru/u/f9LHodD0cOJBDiyrlT3QHa6s5pV6qXdU_m3_IooC7Tsqp79NEd8lO8xZPYs"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 bg-[#7C5CFC] hover:bg-[#6242e0] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+        aria-label="MAX"
+      >
+        <Icon name="MessageSquareText" size={24} />
+      </a>
     </div>
   );
 }

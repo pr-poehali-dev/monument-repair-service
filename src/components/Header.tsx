@@ -27,6 +27,10 @@ export default function Header({ activeSection }: HeaderProps) {
               <Icon name="Send" size={16} />
               <span className="hidden md:inline font-medium">Telegram</span>
             </a>
+            <a href="https://max.ru/u/f9LHodD0cOJBDiyrlT3QHa6s5pV6qXdU_m3_IooC7Tsqp79NEd8lO8xZPYs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 bg-[#7C5CFC] hover:bg-[#6242e0] text-white px-2.5 py-1.5 rounded-lg transition-colors text-sm">
+              <Icon name="MessageSquareText" size={16} />
+              <span className="hidden md:inline font-medium">MAX</span>
+            </a>
             <a href="tel:+79490732315" className="flex items-center gap-1 hover:text-primary transition-colors">
               <Icon name="Phone" size={18} />
               <span className="text-sm">+7 (949) 073-23-15</span>
