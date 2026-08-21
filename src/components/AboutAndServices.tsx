@@ -16,7 +16,7 @@ export default function AboutAndServices() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Изготовление памятников в Мариуполе</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg" itemProp="description">
-            ГК ГРАНИТ — изготовление, установка и ремонт памятников из гранита в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске и Таганроге. Создаём памятники любой сложности и формы под ключ.
+            ГК ГРАНИТ — изготовление, установка и ремонт памятников из гранита в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске, Таганроге и Ростове-на-Дону. Создаём памятники любой сложности и формы под ключ.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary bg-white/80 backdrop-blur-sm">
@@ -62,7 +62,7 @@ export default function AboutAndServices() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary" itemProp="serviceType">Услуги по изготовлению памятников в Мариуполе</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
-            Полный комплекс услуг по изготовлению, установке и ремонту памятников в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске и Таганроге
+            Полный комплекс услуг по изготовлению, установке и ремонту памятников в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске, Таганроге и Ростове-на-Дону
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
