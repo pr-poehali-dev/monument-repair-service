@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import FloatingButtons from "@/components/FloatingButtons";
 import SEO from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Icon from "@/components/ui/icon";
 
 export default function Portfolio() {
   return (
@@ -23,7 +24,7 @@ export default function Portfolio() {
             Примеры выполненных работ с установкой и благоустройством
           </p>
           <p className="text-center text-primary font-semibold mb-12">
-            Больше работ в нашем <a href="https://t.me/Pamyatniki_Mariupol_Granite" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary/80">Telegram-канале</a>
+            Больше работ в нашей <a href="https://max.ru/join/cQXPBgcrh5RN0Ucmfi0L9WxjIoVJaWagF3h50foKtVo" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary/80">группе в MAX</a>
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -94,18 +95,16 @@ export default function Portfolio() {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4">Хотите увидеть больше наших работ?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Подписывайтесь на наш Telegram-канал, где мы регулярно публикуем фото новых проектов и делимся опытом работы
+            Переходите в нашу группу в MAX, где мы регулярно публикуем фото новых проектов и делимся опытом работы
           </p>
           <a 
-            href="https://t.me/Pamyatniki_Mariupol_Granite" 
+            href="https://max.ru/join/cQXPBgcrh5RN0Ucmfi0L9WxjIoVJaWagF3h50foKtVo" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0088cc] hover:bg-[#006699] text-white px-8 py-3 rounded-lg transition-colors font-semibold"
+            className="inline-flex items-center gap-2 bg-[#7C5CFC] hover:bg-[#6242e0] text-white px-8 py-3 rounded-lg transition-colors font-semibold"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.48 1.02-.73 4-1.74 6.68-2.89 8.03-3.45 3.82-1.58 4.61-1.86 5.13-1.87.11 0 .37.03.53.17.14.11.18.26.2.37.01.08.03.29.01.45z"/>
-            </svg>
-            Перейти в Telegram
+            <Icon name="MessageSquareText" size={24} />
+            Перейти в MAX
           </a>
         </div>
       </section>
