@@ -10,9 +10,9 @@ export default function Contacts() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Контакты - Адреса магазинов в Мариуполе, Таганроге и Ростове-на-Дону"
-        description="Контакты GK Granite: Мариуполь (Киевский рынок, пав. 278; ул. Каффайская, 69, рынок «Эдельвейс», пав. 33), Таганрог (ул. Пархоменко 7Г) и Ростов-на-Дону (ул. Обсерваторная, 30). Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22. Telegram: @GKgranit19. Изготовление памятников из гранита и мрамора."
-        keywords="контакты памятники, адрес Мариуполь, адрес Таганрог, адрес Ростов-на-Дону, памятники Мариуполь, памятники Таганрог, памятники Ростов-на-Дону, Киевский рынок, Пархоменко 7Г, Каффайская, рынок Эдельвейс, Обсерваторная, GK Granite, изготовление памятников"
+        title="Контакты - Адреса магазинов в Ростове-на-Дону, Мариуполе и Таганроге"
+        description="Контакты GK Granite: Ростов-на-Дону (ул. Обсерваторная, 30), Мариуполь (Киевский рынок, пав. 278; ул. Каффайская, 69, рынок «Эдельвейс», пав. 33) и Таганрог (ул. Пархоменко 7Г). Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22. Telegram: @GKgranit19. Изготовление памятников из гранита и мрамора."
+        keywords="контакты памятники, адрес Ростов-на-Дону, адрес Мариуполь, адрес Таганрог, памятники Ростов-на-Дону, памятники Мариуполь, памятники Таганрог, Обсерваторная, Киевский рынок, Пархоменко 7Г, Каффайская, рынок Эдельвейс, GK Granite, изготовление памятников"
         canonical="https://gkgranitk.ru/contacts"
       />
       <Header activeSection="contacts" />
@@ -62,6 +62,10 @@ export default function Contacts() {
                 <h3 className="text-xl font-bold mb-2">Адреса магазинов</h3>
                 <div className="text-gray-300 space-y-3">
                   <div>
+                    <p className="font-semibold text-white">Ростов-на-Дону</p>
+                    <p>ул. Обсерваторная, 30</p>
+                  </div>
+                  <div>
                     <p className="font-semibold text-white">Мариуполь</p>
                     <p>Киевский рынок<br />павильон 278, мкрн Восточный</p>
                   </div>
@@ -72,10 +76,6 @@ export default function Contacts() {
                   <div>
                     <p className="font-semibold text-white">Таганрог</p>
                     <p>ул. Пархоменко 7Г</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">Ростов-на-Дону</p>
-                    <p>ул. Обсерваторная, 30</p>
                   </div>
                 </div>
               </CardContent>
@@ -97,6 +97,28 @@ export default function Contacts() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-secondary">Наши адреса на карте</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden hover:shadow-xl transition-all">
+              <CardContent className="p-0">
+                <div className="bg-secondary text-white p-4">
+                  <h3 className="text-2xl font-bold flex items-center gap-2">
+                    <Icon name="MapPin" size={24} />
+                    Ростов-на-Дону
+                  </h3>
+                  <p className="text-gray-300 mt-2">ул. Обсерваторная, 30</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0!2d39.718705!3d47.222078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc0000000000%3A0x0!2z0J7QsdGB0LXRgNCy0LDRgtC-0YDQvdCw0Y8gMzA!5e0!3m2!1sru!2s!4v1234567890"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Карта Ростов-на-Дону"
+                ></iframe>
+              </CardContent>
+            </Card>
+
             <Card className="overflow-hidden hover:shadow-xl transition-all">
               <CardContent className="p-0">
                 <div className="bg-secondary text-white p-4">
@@ -159,28 +181,6 @@ export default function Contacts() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Карта Таганрог"
-                ></iframe>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all">
-              <CardContent className="p-0">
-                <div className="bg-secondary text-white p-4">
-                  <h3 className="text-2xl font-bold flex items-center gap-2">
-                    <Icon name="MapPin" size={24} />
-                    Ростов-на-Дону
-                  </h3>
-                  <p className="text-gray-300 mt-2">ул. Обсерваторная, 30</p>
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0!2d39.718705!3d47.222078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc0000000000%3A0x0!2z0J7QsdGB0LXRgNCy0LDRgtC-0YDQvdCw0Y8gMzA!5e0!3m2!1sru!2s!4v1234567890"
-                  width="100%"
-                  height="350"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Карта Ростов-на-Дону"
                 ></iframe>
               </CardContent>
             </Card>

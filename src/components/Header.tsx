@@ -19,7 +19,7 @@ export default function Header({ activeSection }: HeaderProps) {
             />
             <div>
               <h1 className="text-2xl md:text-3xl font-bold" itemProp="name">ГК ГРАНИТ</h1>
-              <p className="text-sm text-gray-400" itemProp="description">Работаем по всей Донецкой и Ростовской области</p>
+              <p className="text-sm text-gray-400" itemProp="description">Работаем по всей Ростовской и Донецкой области</p>
             </div>
           </div>
           <div className="flex items-center gap-3 flex-wrap">

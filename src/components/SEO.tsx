@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, ogImage, canonical }: SEOProps) {
-  const fullTitle = `${title} | GK Granite - Памятники в Мариуполе и Ростове-на-Дону`;
+  const fullTitle = `${title} | GK Granite - Памятники в Ростове-на-Дону и Мариуполе`;
   const defaultImage = 'https://cdn.poehali.dev/files/IMG_8835.jpeg';
   const siteUrl = 'https://gkgranitk.ru';
   
@@ -33,10 +33,10 @@ export default function SEO({ title, description, keywords, ogImage, canonical }
       
       {canonical && <link rel="canonical" href={canonical} />}
       
-      <meta name="geo.region" content="UA-14" />
-      <meta name="geo.placename" content="Мариуполь" />
-      <meta name="geo.position" content="47.097133;37.543367" />
-      <meta name="ICBM" content="47.097133, 37.543367" />
+      <meta name="geo.region" content="RU-ROS" />
+      <meta name="geo.placename" content="Ростов-на-Дону" />
+      <meta name="geo.position" content="47.222078;39.718705" />
+      <meta name="ICBM" content="47.222078, 39.718705" />
     </Helmet>
   );
 }

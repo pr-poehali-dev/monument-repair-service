@@ -14,9 +14,9 @@ export default function AboutAndServices() {
           <div className="absolute top-1/3 left-1/3 text-6xl">🕊️</div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Изготовление памятников в Мариуполе</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">Изготовление памятников в Ростове-на-Дону</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg" itemProp="description">
-            ГК ГРАНИТ — изготовление, установка и ремонт памятников из гранита в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске, Таганроге и Ростове-на-Дону. Создаём памятники любой сложности и формы под ключ.
+            ГК ГРАНИТ — изготовление, установка и ремонт памятников из гранита в Ростове-на-Дону, Мариуполе, Таганроге, Мангуше, Володарском, Волновахе и Новоазовске. Создаём памятники любой сложности и формы под ключ.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary bg-white/80 backdrop-blur-sm">
@@ -60,15 +60,15 @@ export default function AboutAndServices() {
 
       <section className="py-20 bg-muted" itemScope itemType="https://schema.org/Service">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary" itemProp="serviceType">Услуги по изготовлению памятников в Мариуполе</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary" itemProp="serviceType">Услуги по изготовлению памятников в Ростове-на-Дону</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-lg">
-            Полный комплекс услуг по изготовлению, установке и ремонту памятников в Мариуполе, Мангуше, Володарском, Волновахе, Новоазовске, Таганроге и Ростове-на-Дону
+            Полный комплекс услуг по изготовлению, установке и ремонту памятников в Ростове-на-Дону, Мариуполе, Таганроге, Мангуше, Володарском, Волновахе и Новоазовске
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "Hammer", title: "Изготовление памятников Мариуполь", desc: "Из гранита и мрамора любой сложности" },
-              { icon: "Wrench", title: "Ремонт памятников Мариуполь", desc: "Восстановление и реставрация" },
-              { icon: "Truck", title: "Установка памятников", desc: "Профессиональный монтаж в Мариуполе и области" },
+              { icon: "Hammer", title: "Изготовление памятников Ростов-на-Дону", desc: "Из гранита и мрамора любой сложности" },
+              { icon: "Wrench", title: "Ремонт памятников Ростов-на-Дону", desc: "Восстановление и реставрация" },
+              { icon: "Truck", title: "Установка памятников", desc: "Профессиональный монтаж в Ростове-на-Дону и области" },
               { icon: "PenTool", title: "Гравировка портретов", desc: "Художественная гравировка и надписи" }
             ].map((service, idx) => (
               <Card key={idx} className="hover:shadow-xl transition-all hover:-translate-y-1">

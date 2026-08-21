@@ -8,11 +8,18 @@ export default function StructuredData() {
     "name": "ГК ГРАНИТ",
     "alternateName": "GK Granite",
     "legalName": "ГК ГРАНИТ",
-    "description": "Изготовление и установка памятников из гранита в Мариуполе и Таганроге. Доставка в ДНР и Ростовскую область. Гравировка портретов, благоустройство мест захоронения.",
+    "description": "Изготовление и установка памятников из гранита в Ростове-на-Дону и Мариуполе. Доставка по Ростовской области и ДНР. Гравировка портретов, благоустройство мест захоронения.",
     "foundingDate": "2015",
     "image": "https://cdn.poehali.dev/files/IMG_8835.jpeg",
     "logo": "https://cdn.poehali.dev/projects/6caffc6e-b214-44d6-831f-6e58e2a1faa7/files/69135670-c90e-464b-9e24-edb2fd63606c.jpg",
     "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Обсерваторная, 30",
+        "addressLocality": "Ростов-на-Дону",
+        "addressRegion": "Ростовская область",
+        "addressCountry": "RU"
+      },
       {
         "@type": "PostalAddress",
         "streetAddress": "Киевский рынок, павильон 278",
@@ -34,19 +41,12 @@ export default function StructuredData() {
         "addressRegion": "Ростовская область",
         "postalCode": "347900",
         "addressCountry": "RU"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "ул. Обсерваторная, 30",
-        "addressLocality": "Ростов-на-Дону",
-        "addressRegion": "Ростовская область",
-        "addressCountry": "RU"
       }
     ],
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "47.097133",
-      "longitude": "37.543367"
+      "latitude": "47.222078",
+      "longitude": "39.718705"
     },
     "telephone": ["+7-949-073-23-15", "+7-917-334-70-22"],
     "url": "https://gkgranitk.ru",
@@ -59,6 +59,10 @@ export default function StructuredData() {
     "areaServed": [
       {
         "@type": "City",
+        "name": "Ростов-на-Дону"
+      },
+      {
+        "@type": "City",
         "name": "Мариуполь"
       },
       {
@@ -66,16 +70,12 @@ export default function StructuredData() {
         "name": "Таганрог"
       },
       {
-        "@type": "City",
-        "name": "Ростов-на-Дону"
+        "@type": "State",
+        "name": "Ростовская область"
       },
       {
         "@type": "State",
         "name": "ДНР"
-      },
-      {
-        "@type": "State",
-        "name": "Ростовская область"
       }
     ],
     "hasOfferCatalog": {
@@ -167,7 +167,7 @@ export default function StructuredData() {
         "name": "Где находятся ваши магазины?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "У нас четыре магазина: в Мариуполе (Киевский рынок, павильон 278, мкрн Восточный), в Мариуполе (ул. Каффайская, 69, рынок «Эдельвейс», павильон 33), в Таганроге (ул. Пархоменко 7Г) и в Ростове-на-Дону (ул. Обсерваторная, 30). Работаем ежедневно. Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22."
+          "text": "У нас четыре магазина: в Ростове-на-Дону (ул. Обсерваторная, 30), в Мариуполе (Киевский рынок, павильон 278, мкрн Восточный), в Мариуполе (ул. Каффайская, 69, рынок «Эдельвейс», павильон 33) и в Таганроге (ул. Пархоменко 7Г). Работаем ежедневно. Телефоны: +7 (949) 073-23-15, +7 (917) 334-70-22."
         }
       }
     ]
