@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, ogImage, canonical }: SEOProps) {
-  const fullTitle = `${title} | GK Granite - Памятники в Мариуполе`;
+  const fullTitle = `${title} | GK Granite - Памятники в Мариуполе и Ростове-на-Дону`;
   const defaultImage = 'https://cdn.poehali.dev/files/IMG_8835.jpeg';
   const siteUrl = 'https://gkgranitk.ru';
   
